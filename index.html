@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Singletoni Trips-Traps-Trull</title>
+    <meta name="description" content="Parima trips-traps-trulli leiab Singletonist!">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+<body>
+    <div class="buttonContainer">
+        <button id="restart">Restart game</button>
+    </div>
+    <main id="app" class="gameContainer">
+
+    </main>
+
+    <template id="position">
+        <section id="position-content" class="position"  data-x-coord data-y-coord>
+        </section>
+    </template>
+
+    <template id="cross">
+        <div class="cross">
+            X
+            <!-- TODO: Use SVG-->
+        </div>
+    </template>
+
+    <template id="circle">
+        <div class="circle">
+            O
+            <!-- TODO: Use SVG-->
+        </div>
+    </template>
+
+    <template id="empty">
+        <div class="empty">
+            ?
+            <!-- TODO: Use SVG-->
+        </div>
+    </template>
+
+    <script type="module" src="js/models/markings.js"></script>
+    <script type="module" src="js/models/position.js"></script>
+    <script type="module" src="js/models/field.js"></script>
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>
